@@ -1,6 +1,7 @@
-import { navLinks } from "../../constants";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+import { navLinks } from "../../constants/index.js";
 
 const Navbar = () => {
   useGSAP(() => {
@@ -18,7 +19,7 @@ const Navbar = () => {
       },
       {
         backgroundColor: "#00000050",
-        backgroundFilter: "blur(10px)",
+        backdropFilter: "blur(10px)",
         duration: 1,
         ease: "power1.inOut",
       }
